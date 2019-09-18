@@ -1,4 +1,4 @@
-# wkhtmltopdf
+# wkhtmltopdf For Ubuntu(14 & 16)
 wkhtmltopdf odoo supported version
 
 # For Ubuntu: Use deb file and run below command
@@ -14,3 +14,11 @@ sudo cp /usr/local/bin/wkhtmltoimage /usr/bin
 rpm -Uvh wkhtmltox-0.12.2.1_linux-centos7-amd64.rpm
 
 # Restart Odoo server and then try again.
+
+# wkhtmltopdf For Ubuntu 18.04
+
+sudo wget https://builds.wkhtmltopdf.org/0.12.1.3/wkhtmltox_0.12.1.3-1~bionic_amd64.deb
+sudo dpkg -i wkhtmltox_0.12.1.3-1~bionic_amd64.deb
+sudo apt-get install -f
+sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
+sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
