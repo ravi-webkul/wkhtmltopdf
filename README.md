@@ -1,3 +1,11 @@
+# wkhtmltopdf for ubuntu 18
+
+sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
+sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
+sudo apt-get install -f
+sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
+sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
+
 # wkhtmltopdf For Ubuntu(14 & 16)
 wkhtmltopdf odoo supported version
 
