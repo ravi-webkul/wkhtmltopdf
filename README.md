@@ -26,3 +26,11 @@ sudo apt-get install -f
 sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
 
 sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
+
+# wkhtmltopdf For Ubuntu 20.04
+
+sudo apt-get install xfonts-75dpi
+sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+sudo dpkg -i wkhtmltox_0.12.6-1.bionic_amd64.deb
+sudo cp /usr/local/bin/wkhtmltoimage  /usr/bin/wkhtmltoimage
+sudo cp /usr/local/bin/wkhtmltopdf  /usr/bin/wkhtmltopdf
