@@ -38,3 +38,14 @@ sudo dpkg -i wkhtmltox_0.12.6-1.bionic_amd64.deb
 sudo cp /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 
 sudo cp /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
+
+# wkhtmltopdf For Ubuntu 22.04.2 LTS (Jammy Jellyfish)
+sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+
+sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+
+If you get any error with preinstalled package then run this cmd:- **apt install -f**
+
+sudo cp /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
+
+sudo cp /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
